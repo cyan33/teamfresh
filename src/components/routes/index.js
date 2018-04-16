@@ -1,3 +1,4 @@
 
 export { default as LoginRoute } from './LoginRoute'
-export { ViewDealsRoute } from './ViewDealsRoute'
+export { default as ViewDealsRoute } from './ViewDealsRoute'
+export { default as SignUpRoute } from './SignUpRoute'

@@ -1,5 +1,14 @@
 .deals-container {
   font-family: 'MuseoSans300', 'sans-serif';
+  .top-logo {
+    text-align: center;
+    img {
+      width: 4rem;
+      background-color: #fff;
+      border-radius: 100%;
+      box-shadow: 0 0.3rem 1rem #cacaca;
+    }
+  }
   .deals-search {
     margin: 1rem 0 2rem 0;
     display: flex;

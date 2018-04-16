@@ -4,10 +4,7 @@ import {
   Redirect,
   Route
 } from 'react-router-dom'
-import { ViewDealsRoute } from './components/routes'
-
-import { LoginRoute } from './components/routes'
-
+import { ViewDealsRoute, SignUpRoute, LoginRoute } from './components/routes'
 
 import './App.css'
 

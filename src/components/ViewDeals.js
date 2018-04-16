@@ -27,9 +27,6 @@ export default class ViewDeals extends Component {
           className="deal-item"
           style={{ backgroundImage: `url(${thumbnail})` }}
         >
-        <div className="top-logo">
-        <img src={logo} alt="logo"/>        
-      </div>
           <div className="deal-item-container">
             <div className="deal-distributor-avatar">
               <img src={`//logo.clearbit.com/${distributor}.com`} alt="distributor" />
@@ -54,14 +51,13 @@ export default class ViewDeals extends Component {
     const { deals } = this.state
     return (
       <div className="deals-container">
+        <div className="top-logo">
+          <img src={logo} alt="logo"/>
+        </div>
         <div className="deals-search">
           <input type="text" />
           <SearchIcon color="gray" />
         </div>
-        {
-          !deals &&
-            "Loading..."
-        }
         {
           deals &&
           <ul className="deals-list">

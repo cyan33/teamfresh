@@ -1,7 +1,5 @@
 
 import React, { Component } from 'react'
-import { SearchIcon, LocationIcon } from './Icons'
-import DealStore from './stores/DealStore'
 
 
 import './SignUp.css'
@@ -13,33 +11,30 @@ export default class SignUp extends Component {
   }
 
   render() {
-    const { deals } = this.state
     return (
       <div className="SignUp-container">
-          <img src={logoTitle} alt="FreshSpire" className="img-format"/>
-          <p className="caption-content">Optimizing food distribution, one community at a time.</p>
+				<img src={logoTitle} alt="FreshSpire" className="img-format"/>
 	      <div className="SignUp-context">
 	      	<label>Username <input type="text"/></label>
 	      </div>
-		  <div className="SignUp-context">
-		    <label>Password <input type="password"/></label>
-		  </div>
-		  <div className="SignUp-context">
-		    <label>Repeat Password <input type="password"/></label>
-		  </div>
-		  <div className="SignUp-context">
-		    <label>Email <input type="text"/></label>
-		  </div>
-		  <div className="SignUp-context">
-		    <label> Phone # <input type="text"/></label>
-		  </div>
-		  <div className="SignUp-context">
-		    <label>Address <input type="text"/></label>
-		  </div>			  		  
-		  <div className="btn-submit">
-		    <input type="button" value="Sign Up"/>
-		  </div>
-        
+				<div className="SignUp-context">
+					<label>Password <input type="password"/></label>
+				</div>
+				<div className="SignUp-context">
+					<label>Repeat Password <input type="password"/></label>
+				</div>
+				<div className="SignUp-context">
+					<label>Email <input type="text"/></label>
+				</div>
+				<div className="SignUp-context">
+					<label> Phone # <input type="text"/></label>
+				</div>
+				<div className="SignUp-context">
+					<label>Address <input type="text"/></label>
+				</div>			  		  
+				<div className="btn-submit">
+					<input type="button" value="Sign Up"/>
+				</div>
       </div>
     )
   }

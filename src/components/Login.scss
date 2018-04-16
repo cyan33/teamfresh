@@ -1,5 +1,15 @@
 .login-container {
   font-family: 'MuseoSans300', 'sans-serif';
+  background-image: url('../assets/Cover.jpg');
+  margin: -15px;
+  position: fixed;
+  display:table-cell;
+  object-fit: contain;
+  padding-bottom: 400px;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-size:cover;
   .login-credentials {
     display: flex;
     justify-content: center;
@@ -11,8 +21,7 @@
       font-size: 1rem;
       position: relative;
       top: -3em;
-	  	
-		    
+      color: #808080;
     }
     label {
       width: 6em;
@@ -48,7 +57,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 575px;
+    width: 75%;
+    margin: 3rem auto;
+    margin-top:auto;
+    margin-bottom:auto;
   }
   
   .example-appear {
