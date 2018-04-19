@@ -11,6 +11,33 @@ export default class ViewDeals extends Component {
     deals: null
   }
 
+  constructor(props){
+	    super(props);
+
+	    this.state = {
+	      show: false
+	    }
+	    this.doSomething = this.doSomething.bind(this);
+	    this.toggleShow = this.toggleShow.bind(this);
+	    this.hide = this.hide.bind(this);
+	  }
+
+	  doSomething(e){
+	    e.preventDefault();
+	    console.log(e.target.innerHTML);
+	  }
+
+	  toggleShow(){
+	    this.setState({show: !this.state.show});
+	  }
+
+	  hide(e){
+	    if(e && e.relatedTarget){
+	      e.relatedTarget.click();
+	    }
+	    this.setState({show: false});
+	  }
+	  
   componentDidMount() {
     DealStore.getDeals().then((deals) => {
       this.setState({ deals })
@@ -28,9 +55,6 @@ export default class ViewDeals extends Component {
           style={{ backgroundImage: `url(${thumbnail})` }}
         >
           <div className="deal-item-container">
-            <div className="deal-distributor-avatar">
-              <img src={`//logo.clearbit.com/${distributor}.com`} alt="distributor" />
-            </div>
             <div className="deal-description">
               <div className="distance">
                 <LocationIcon color="#cecece" />
@@ -51,8 +75,33 @@ export default class ViewDeals extends Component {
     const { deals } = this.state
     return (
       <div className="deals-container">
-        <div className="top-logo">
-          <img src={logo} alt="logo"/>
+        <div className="top-logo" style={{zIndex:999}} >
+        	<button className="btn-primary" type="button" onClick={this.toggleShow} onBlur={this.hide}>
+        	<img src={logo} alt="logo" style={{zIndex:999}} />
+        		<span className="caret"></span>
+        	</button>       	
+        <div className="dropdown-menu" >
+        {
+        	this.state.show &&
+      (
+        <ul className="dropdown-menu" style={{display: 'block'}}>
+        <li><div className="btn-submit" style={{zIndex:200}}>
+        	<input type="button" value="Profile"/>
+        </div></li>
+        <li><div className="btn-submit" style={{zIndex:200}}>
+    		<input type="button" value="View Deals"/>
+    	</div></li>
+        <li><div className="btn-submit" style={{zIndex:200}}>
+    		<input type="button" value="Shopping Cart"/>
+    	</div></li>
+    	<li><div className="btn-submit" style={{zIndex:200}}>
+    		<input type="button" value="Log Out"/>
+    	</div></li>
+    	<div className="background-circle" style={{zIndex:10}} ></div>
+        </ul>
+      )
+      }
+        </div>
         </div>
         <div className="deals-search">
           <input type="text" />
