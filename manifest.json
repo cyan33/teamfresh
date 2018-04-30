@@ -98,11 +98,17 @@
             "type": "image/png"
         }
     ],
-    "start_url": "https://cyan33.github.io/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "theme_color": "#3dd28f",
     "background_color": "#3dd28f",
     "lang": "English",
     "orientation": "portrait-primary",
-    "description": "Optimizing food distribution, one community at a time."
+    "description": "Optimizing food distribution, one community at a time.",
+    "related_applications": [
+        {
+            "platform": "play",
+            "id": "com.google.samples.apps.iosched"
+        }
+    ]
 }
