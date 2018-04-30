@@ -1,15 +1,108 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "short_name": "Freshspire",
+    "name": "Freshspire",
+    "icons": [
+        {
+            "src": "./Images/favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "./Images/d9bb0a98-cd6a-6323-5ba7-b1d8fa5df3e7.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/4e4f67ce-be81-f835-c6e9-fd084c1d02ac.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/283780ce-836d-a5be-cdbe-60f9c0dd469e.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/2c9ef975-bc45-6bd2-777b-a609ccb04275.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/c36f7c37-7f1c-3381-c953-12937c81b647.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/45c5387c-6d7c-fd9c-8546-b953c1b5d348.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/86348094-0e4c-5fe8-cee7-a7c0e2b219d9.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/66885f62-c702-6528-d623-3d708f1145c6.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/5c9e0171-beb8-d7d2-d558-6fa9c8c1636d.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/95eb354d-8dfb-67c7-5d38-6fc5c19ae905.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/81f297b6-d15e-d414-9d17-94b6d6300d2b.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/5b784f02-e12b-1a74-88f3-ea3df76376e2.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/909c781f-a0a3-a5a5-4b9a-42ff4f6ae6b1.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/8fe60cea-03d8-8187-505c-a9c2fb40c332.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/8727f899-f56e-bf4f-7739-e395a758f5de.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/c1ae0c3c-9309-ec62-312f-f861d83d5388.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/34fdccf5-20d8-805d-5cf1-d632daf3534b.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "./Images/7ca7f011-8575-7e31-eafc-13b078c6bed7.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "https://cyan33.github.io/index.html",
+    "display": "standalone",
+    "theme_color": "#3dd28f",
+    "background_color": "#3dd28f",
+    "lang": "English",
+    "orientation": "portrait-primary",
+    "description": "Optimizing food distribution, one community at a time."
 }
